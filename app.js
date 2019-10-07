@@ -40,10 +40,7 @@ switch (argv._[0]) {
         break;
     case 'borrar':
         let borrar = porHacer.borrar(argv.descripcion);
-        if (borrar)
-            console.log(` El elemento se borro exitosamente ${argv.descripcion}`);
-        else
-            console.log(` No se pudo borrrar el elemento ${argv.descripcion}`);
+        console.log(borrar);
         break;
     default:
         console.log('El comando no es reconocido')
